@@ -81,3 +81,15 @@ p2.printinfo()
     If the length is greater than ten console log "Big word". 
     If the length of the string is less than 10 console log "Small Number"
 */
+function greaterThanTen(number){
+    let promise = new Promise(function(resolve, reject){
+        if(number > 10){
+            console.log('big word')
+        } else {
+            console.log('small number')
+        }
+        resolve()
+    })
+    return promise
+}
+greaterThanTen(20)
